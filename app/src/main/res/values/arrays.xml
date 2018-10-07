@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="year">
+        <item>2017</item>
+        <item>2018</item>
+<item>2019</item>
+    </string-array>
+    <string-array name="term">
+        <item>1학기</item>
+        <item>여름학기</item>
+        <item>2학기</item>
+        <item>겨울학기</item>
+    </string-array>
+    <string-array name="graduateArea">
+        <item>일반대학원</item>
+    </string-array>
+    <string-array name="universityArea">
+        <item>전공</item>
+        <item>교양및기타</item>
+    </string-array>
+    <string-array name="graduateMajor">
+        <item>컴퓨터교육과</item>
+    </string-array>
+    <string-array name="universityRefinementMajor">
+        <item>교양</item>
+    </string-array>
+    <string-array name="universityMajor">
+        <item>컴퓨터공학과</item>
+    </string-array>
+
+
+    <string-array name="major">
+        <item>컴퓨터공학과</item>
+        <item>기계공학과</item>
+        <item>메카트로닉스공학과</item>
+        <item>에너지공학과</item>
+        <item>전자공학과</item>
+        <item>자동차공학과</item>
+    </string-array>
+
+</resources>

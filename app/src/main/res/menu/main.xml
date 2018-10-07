@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/weather"
+        android:orderInCategory="100"
+        android:title="날씨 보기"
+        app:showAsAction="always"
+        android:icon="@drawable/square_logo"
+        android:visible="true"/>
+    <item
+        android:id="@+id/admin"
+        android:orderInCategory="100"
+        android:title="관리자 모드"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+
+</menu>

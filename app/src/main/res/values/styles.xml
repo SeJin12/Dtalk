@@ -1,0 +1,40 @@
+<resources>
+
+
+    <style name="ScheduleContentTextViewTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <!--<item name="android:autoSizeTextType">uniform</item> API 26이상에서만 가능-->
+    </style> <!--fragment_schedule.xml-->
+    <style name="ButtonTheme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color4</item>
+        <item name="colorPrimaryDark">@color/color5</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+</resources>

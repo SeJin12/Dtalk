@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.capdtalk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/primary_logo_image_on_transparent_150x150"
+        android:label="DTalk"
+        android:roundIcon="@drawable/university_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="Dtalk">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="회원가입 화면"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="메인 화면"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.AdminActivity"
+            android:label="메인 화면"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.BoardWriteActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.BoardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.BoardCommentActivity"
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name=".Notification.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Notification.MyServiceBoard"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

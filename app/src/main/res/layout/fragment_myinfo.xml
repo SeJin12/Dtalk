@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff5ff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/id"
+            android:drawableLeft="@drawable/id"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/myinfo_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="실제아이디 들어갈곳"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:layout_marginRight="5dp"/>
+
+
+        <EditText
+            android:id="@+id/myinfo_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/myinfo_major"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="현재학과이름"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/major"
+            android:drawableLeft="@drawable/major"
+            android:layout_marginRight="5dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myinfo_majorSpinner"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/classab"
+            android:drawableLeft="@drawable/classab"
+            android:layout_marginRight="5dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myinfo_classGroup"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="A반"
+                android:id="@+id/myinfo_classA"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="B반"
+                android:id="@+id/myinfo_classB"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/member"
+            android:drawableLeft="@drawable/member"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/myinfo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/register_phone"
+            android:drawableLeft="@drawable/register_phone"
+            android:layout_marginRight="5dp"/>
+
+
+        <EditText
+            android:id="@+id/myinfo_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#eff5ff"
+                android:weightSum="2"
+                >
+
+                <Button
+                    android:id="@+id/myinfo_updatebtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    style="@style/ButtonTheme"
+                    android:text="수 정"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/myinfo_cancelbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    style="@style/ButtonTheme"
+                    android:text="취 소"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

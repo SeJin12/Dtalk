@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/member"
+                android:drawableLeft="@drawable/member"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/color3"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/bcw_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="작성자"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/date"
+                android:drawableLeft="@drawable/date"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/color3"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/bcw_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/photo"
+            android:layout_weight="3"
+            />
+
+        <TextView
+            android:id="@+id/bcw_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="제목이 들어갈 자리"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/bcw_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="본문입니다.
+동해물과 백두산이 마르고 닳도록
+하느님이 보우하사 우리나라 만세"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="#649eff"
+            style="@style/ButtonTheme">
+
+            <EditText
+                android:id="@+id/bcw_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:paddingLeft="9dp"/>
+
+            <Button
+                android:id="@+id/bcw_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#649eff"
+                style="@style/ButtonTheme"
+                android:text="등 록"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/bcw_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

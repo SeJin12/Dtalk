@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="#eff5ff">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/logo"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:padding="5dp"
+            android:layout_marginHorizontal="6dp"
+            >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/notice"
+                    android:drawableStart="@drawable/notice"
+                    android:background="@color/color1"
+                    android:text=" 공지 사항"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:gravity="center_vertical"/>
+
+            <ListView
+                android:id="@+id/noticeListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:padding="5dp"
+            android:layout_marginHorizontal="6dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/event"
+                android:drawableStart="@drawable/event"
+                android:background="@color/color1"
+                android:text=" 학과 행사"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"/>
+
+            <ListView
+                android:id="@+id/eventListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
