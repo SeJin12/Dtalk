@@ -20,7 +20,7 @@ public class ServiceThread extends Thread {
         while(isRun){
             handler.sendEmptyMessage(0);
             try{
-                Thread.sleep(60000);
+                Thread.sleep(20000);
             }catch (Exception e){}
         }
     }

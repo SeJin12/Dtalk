@@ -53,19 +53,6 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-//        manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-//            String channelId= "channel-1";
-//            NotificationChannel channel = new NotificationChannel(channelId,"channelName",NotificationManager.IMPORTANCE_DEFAULT);
-//            channel.setDescription("channelDescription");
-//            manager.createNotificationChannel(channel);
-//            builder = new NotificationCompat.Builder(this,channelId);
-//        }else{
-//            builder = new NotificationCompat.Builder(this,null);
-//        }
-//        MyServiceHandler handler = new MyServiceHandler();
-//        thread = new ServiceThread(handler);
-//        thread.start();
         return START_STICKY;
     }
 

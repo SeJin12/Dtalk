@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity
     private CustomWeatherDialog dialog;
     FloatingActionButton fab;
     public static String member_name; // 로그인한 멤버의 이름을 전역으로 쓰기 위해서
+    public static Intent intentMain; // Service Main
+    public static Intent intentBoard; // Service Board
 
     @Override
     public Context getApplicationContext() {
@@ -110,9 +112,9 @@ public class MainActivity extends AppCompatActivity
         nav_header_group = (TextView) nav_header_view.findViewById(R.id.nav_header_group);
         nav_header_name = (TextView) nav_header_view.findViewById(R.id.nav_header_name);
 
-        Intent intent = new Intent(MainActivity.this,MyService.class);
-        Intent intentBoard = new Intent(MainActivity.this,MyServiceBoard.class);
-        startService(intent);
+        intentMain = new Intent(MainActivity.this,MyService.class);
+        intentBoard = new Intent(MainActivity.this,MyServiceBoard.class);
+        startService(intentMain);
         startService(intentBoard);
 
 
@@ -122,20 +124,12 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Intent intent = new Intent(MainActivity.this,MyService.class);
-        Intent intentBoard = new Intent(MainActivity.this,MyServiceBoard.class);
-        stopService(intent);
+        stopService(intentMain);
         stopService(intentBoard);
     }
 
     @Override
     public void onBackPressed() {
-        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }*/
 
         //2초 이내에 뒤로가기 버튼을 재 클릭 시 앱 종료
         if (System.currentTimeMillis() - lastTimeBackPressed < 2000)
