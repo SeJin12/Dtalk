@@ -38,9 +38,9 @@ public class MyServiceBoard extends Service {
         super.onCreate();
         manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            String channelId= "channel-2";
-            NotificationChannel channel = new NotificationChannel(channelId,"channelName",NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription("channelDescription-2");
+            String channelId= "Notification-Board";
+            NotificationChannel channel = new NotificationChannel(channelId,"Notification-Board",NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription("check board");
             manager.createNotificationChannel(channel);
             builder = new NotificationCompat.Builder(this,channelId);
         }else{

@@ -38,9 +38,9 @@ public class MyService extends Service {
         super.onCreate();
         manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            String channelId= "channel-1";
-            NotificationChannel channel = new NotificationChannel(channelId,"channelName",NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription("channelDescription");
+            String channelId= "Notification-Main";
+            NotificationChannel channel = new NotificationChannel(channelId,"Notification-Main",NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription("check notice,event");
             manager.createNotificationChannel(channel);
             builder = new NotificationCompat.Builder(this,channelId);
         }else{
